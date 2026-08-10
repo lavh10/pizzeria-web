@@ -1,0 +1,177 @@
+/* Esto quita los margenes por defecto del navegador para poder controlarlo*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Fundamental para que los bordes no rompan el ancho*/
+}
+
+/* Cuerpo y fuente*/
+body{
+    font-family: Arial, Helvetica, sans-serif; /* Utilizare unas fuentes comodas de leer */
+    /*background-color: #f4f4f4;*/
+    background-color: antiquewhite;
+    color: #333; 
+    line-height: 1.6;
+}
+/* Logo principal*/
+.logo_principal {
+    /* Busco que el logo jamas sea mas ancho que el contenedor*/
+    max-width: 50%;
+
+    /* Calculo la altura automatica para evitar deformasiones*/
+    height: auto;
+
+    /*Para centrarla */
+    display: block;
+    margin: 0 auto 15px auto; /*arriba, auto derecha, 15px abajo , auto izquierda*/
+
+}
+
+/* Seccion del boton*/
+
+.seccion_contacto p {
+    font-size: 1rem; /* Mas grande que el texto normal*/
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.direccion{
+    
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #d32f2f;
+    display: block;
+    margin-bottom: 0px;
+}
+.numero{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    display: block;
+    margin-bottom: 0px;
+    text-shadow:
+    -1px -1px 0 #6d6b6b,
+     1px -1px 0 #6d6b6b,
+    -1px  1px 0 #6d6b6b,
+     1px  1px 0 #6d6b6b;
+}
+
+.boton_llamar {
+    text-align: center;
+    display: block; /* Genera que se ocupe todo el ancho para mas comodidad en el celular*/
+    background-color: rgba(0,0,0,0.6) ;
+    color: white;
+    text-decoration: none; /* Quita el subrayado al boton*/
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* genero un poco de relieve*/
+    
+    /* Efecto al tocar el boton*/
+
+    transition: background 0.3s;
+}
+
+.boton_llamar:hover {
+    background-color: rgb(99, 95, 95);
+}
+
+/* Menu*/
+
+main {
+    padding: 0 15px; /* agrego margen para evitar que se pege el borde del celulñar*/
+}
+
+/*Uso el h1 para el indicador de extras*/
+main h1{
+    font-size:20px;
+    font-weight:bold;
+    text-align:left;
+    padding: 0px;
+    text-transform: capitalize;
+    color: #f9a61f;
+}
+
+main h2 {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+    color: #d32f2f;
+}
+/* Son los recargos */
+main h4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+    text-transform: capitalize;
+    color: #d32f2f;
+}
+
+/* Diseño de cada tarjeta de pizza*/
+
+.item_menu {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 15px;
+    padding: 7px;
+    margin-bottom: 15px; /* Espacios entre pizzas*/
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.15);
+}
+
+/*Para personalizarlo a gusto use <p> con una clase*/
+.recargos{ 
+    font-size:13px;
+    font-weight:bold;
+    color: #d32f2f;    
+}
+
+.item_menu h3 {
+    margin-bottom: 5px;
+    color: #d32f2f;
+}
+
+.precio {
+    display: block; /* Baja a una linea neuva*/
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    text-align: right; /* Deja el precio a la derecha*/
+}
+
+/*Pie de pagina*/
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    font-size: 0.9rem;
+
+}
+
+.footer_links {
+    display: flex;
+    flex-direction: column; /* Uno debajo del otro */
+    gap: 10px; /* Espacio entre enlaces */
+    margin-bottom: 20px;
+}
+.footer_links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
